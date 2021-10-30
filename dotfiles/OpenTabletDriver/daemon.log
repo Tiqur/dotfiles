@@ -1,0 +1,15 @@
+09/16/2021 21:43:00
+System.NullReferenceException
+Object reference not set to an instance of an object.
+OpenTabletDriver.Desktop
+   at OpenTabletDriver.Desktop.Profiles.AreaSettings.GetDefaults(DigitizerSpecifications digitizer) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Desktop/Migration/SettingsMigrator.cs:line 37
+   at OpenTabletDriver.Desktop.Profiles.AbsoluteModeSettings.GetDefaults(DigitizerSpecifications digitizer) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Desktop/Reflection/Metadata/PluginMetadataCollection.cs:line 39
+   at OpenTabletDriver.Desktop.Profiles.Profile.GetDefaults(TabletReference tablet) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Desktop/Interop/Timer/LinuxTimer.cs:line 88
+   at OpenTabletDriver.Desktop.Profiles.ProfileCollection.Generate(TabletReference tablet) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Desktop/Interop/Timer/WindowsTimer.cs:line 16
+   at OpenTabletDriver.Desktop.Profiles.ProfileCollection.GetProfile(TabletReference tablet)
+   at OpenTabletDriver.Daemon.DriverDaemon.SetSettings(Settings settings) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Daemon/DriverDaemon.cs:line 107
+   at OpenTabletDriver.Daemon.DriverDaemon.<.ctor>b__0_2(Object sender, DevicesChangedEventArgs args) in /home/tiqur/Development/opentabletdriver/src/OpenTabletDriver-0.5.3.3/OpenTabletDriver.Daemon/Program.cs:line 40
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__140_1(Object state)
+   at System.Threading.QueueUserWorkItemCallbackDefaultContext.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+GetDefaults
